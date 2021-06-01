@@ -74,8 +74,6 @@ SELECT
 FROM
     dqlab_sales_store
 WHERE
-    YEAR(order_date) BETWEEN 2009
-    AND 2012
-    AND order_status LIKE 'Order Finished'
+    order_status = 'Order Finished'
 GROUP BY
     years;
